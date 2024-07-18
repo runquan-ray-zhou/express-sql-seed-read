@@ -1,4 +1,4 @@
--- Default value and data for the database
+-- Default values and data for the database
 
 \c colors_dev;
 

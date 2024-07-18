@@ -8,9 +8,9 @@ const cn = {
     user: process.env.PG_USER,
   };
 
-const db = pgp(cn);
+const db = pgp(cn); // pgp will make 1 string similar to an HTTP request - object to allow us make request to database
 
-db.connect()
+db.connect() // return a promise, connecting to another software/server is asynchronous
   .then((cn) => {
     const { user, host, port, database } = cn.client;
     console.log(
