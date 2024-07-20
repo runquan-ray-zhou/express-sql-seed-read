@@ -42,11 +42,11 @@ const deleteColor = async (id) => { // WHERE filters rows, SELECT
 
 const updateColor = async (id, color) => {
     try {
-        const updateColor = await db.one(
+        const updatedColor = await db.one(
             "UPDATE colors SET name=$1, is_favorite=$2 WHERE id=$3 RETURNING *",
             [color.name, color.is_favorite, id]
         );
-        return updateColor;
+        return updatedColor;
     } catch (error) {
         throw error;
     }
