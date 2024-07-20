@@ -19,7 +19,7 @@ app.get("/", (req, res) => { // app.get creates a route by listening to "/" and 
     res.send("Welcome to Colors App");
 })
 
-app.use("/colors", colorsController); // connects the controller to the main app. prefixing all the routes in the colors controller.  When a route beginning with /colors will be rerouted to colorsController file
+app.use("/colors", colorsController); // connects the controller to the main app. prefixing all the routes in the colors controller.  When a route beginning with /colors will be rerouted to colorsController file / app uses controller
 
 // 404 page
 app.get("*", (req, res) => {
