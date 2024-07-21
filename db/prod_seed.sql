@@ -1,4 +1,4 @@
-\c colors_prod;
+\c colors_prod_gmeb;
 
 INSERT INTO
     colors (name, is_favorite)
