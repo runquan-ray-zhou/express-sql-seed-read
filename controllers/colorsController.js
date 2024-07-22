@@ -1,5 +1,5 @@
 const express = require("express") // define and import the express app from express package
-const colors = express.Router() // create an instances of a router / controller
+const colors = express.Router() // create an instances of a router / controller / new router object.
 const { getAllColors, getColor, createColor, deleteColor, updateColor } = require("../queries/color"); // importing query functions from color.js, they query the database
 const { checkName, checkBoolean } = require("../validations/checkColors.js") // importing validation middleware functions from checkColors.js.
 
